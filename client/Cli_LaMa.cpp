@@ -6,7 +6,7 @@
 #include <string.h>
 
 #define MAX_MSG 1024
-#define IP_SERVIDOR "192.168.18.9"
+#define IP_SERVIDOR "127.0.0.1"
 #define PORTA_SERVIDOR 2022
 
 struct dados_s
@@ -44,6 +44,7 @@ int main()
   {
     printf("\nNao foi possivel criar o socket com o servidor %s:\n", IP_SERVIDOR);
     exit(1);
+    
   }
 
   // configuracao do endereco do servidor
